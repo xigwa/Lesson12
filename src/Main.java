@@ -11,5 +11,19 @@ public class Main {
         company.removeEmployee(1);
         company.listEmployees();
         company.removeEmployee(3);
+
+
+        PetStore petStore = new PetStore();
+
+        petStore.addAnimal(new Dog("Buddy", 3, "Labrador"));
+        petStore.addAnimal(new Cat("Whiskers", 5, "White"));
+
+        petStore.customizeAnimalInfo("Buddy", "Loves playing fetch");
+        petStore.listAnimals();
+        petStore.removeAnimal("Buddy");
+        petStore.listAnimals();
+
+
+
     }
 }
